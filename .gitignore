@@ -1,0 +1,8 @@
+media
+migrations
+__pycache__
+.env
+__init__.py
+
+venv
+.vscode
