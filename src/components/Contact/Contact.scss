@@ -1,0 +1,29 @@
+.contact {
+    background-color: #000000;
+
+    .contact_wrapper {
+        text-align: center;
+        padding-bottom: 4vh;
+
+        .contact_title {
+            padding: 4vh 0;
+
+            h1 {
+                font-size: 24px;
+                font-weight: 800;
+                letter-spacing: 1.5px;
+            }
+        }
+        .contact_form {
+            background-color: rgba(225,225,225,.7);
+
+            .contact_input {
+
+                input {
+
+                }
+            }
+
+        }
+    }
+}

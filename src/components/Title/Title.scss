@@ -1,0 +1,29 @@
+.title {
+  background-image: url("../assets/image/title.jpg");
+  background-color: rgba(51, 51, 51, 0.9);
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+
+  h1 {
+    color: white;
+  }
+
+  .title_wrapper {
+    display: flex;
+    min-height: calc(100vh - 0px);
+    
+    .title_text {
+        margin: auto 0;
+        text-align: left;
+        max-width: 600px;
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+        }
+    }
+
+  }
+}

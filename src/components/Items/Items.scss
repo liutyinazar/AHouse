@@ -1,0 +1,29 @@
+.items {
+  background-color: #121216;
+  padding-bottom: 2em;
+
+  .items_title {
+    text-align: center;
+    h1 {
+      font-size: 4em;
+    }
+  }
+  .items_wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .items_block {
+      background-color: #cccccc;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 20px 0;
+
+      &:hover {
+        background-color: #0000ff;
+
+      }
+
+    }
+  }
+}
