@@ -1,5 +1,28 @@
 .footer {
-    background-color: black;
+    background-color: #fff;
+  
+    .footer_wrapper {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        height: 100%;
 
+        .footer_title {
+            display: flex;
+            gap: 1vh;
 
-}
+            h1 {
+                font-weight: 700;
+            }
+        }
+        .footer_links {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1vh;
+        }
+    }
+  }
+  

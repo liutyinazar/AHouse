@@ -1,53 +1,50 @@
 import "./Header.scss";
-// import { useState } from "react";
+import { useState } from "react";
 
 import logo from "../assets/image/logo.svg";
-import profile from "../assets/image/profile.svg";
-import language_img from "../assets/image/language.svg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
-  // const [localLanguage, setLanguage] = useState("ua");
+  const [isOpen, setIsOpen] = useState(false);
 
-  // const changeLanguage = () => {
-  //   setLanguage("en");
-  // };
+  const burgerMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <header className="header">
       <div className="logo">
-        <a href="/#">
+        <Link to="/" className="menu-link">
           <img src={logo} alt="logo" />
-        </a>
+          <h1>AHouse</h1>
+        </Link>
       </div>
-      <div className="menu">
-        <a href="/#" className="menu-link">
+      <div className={`menu ${isOpen ? "open" : ""}`}>
+        <Link to="/" className="menu-link">
           Продаж
-        </a>
-        <a href="/#" className="menu-link">
+        </Link>
+        <Link to="/" className="menu-link">
           Оренда
-        </a>
-        <a href="/#" className="menu-link">
+        </Link>
+        <Link to="/" className="menu-link">
           Про Нас
-        </a>
-        <a href="/#" className="menu-link">
+        </Link>
+        <Link to="/" className="menu-link">
           Реклама
-        </a>
-        <a href="/#" className="menu-link">
+        </Link>
+        <Link to="/" className="menu-link">
           Зв'язатись з нами
-        </a>
+        </Link>
+        <Link to="/login" className="menu-link login">
+          Увійти
+        </Link>
       </div>
-      <div className="profile">
-        <a href="/#" className="menu-link">
-          <img src={profile} alt="profile" />
-        </a>
-
-        <a href="/#" className="menu-link">
-          <img src={language_img} alt="language" />
-        </a>
-        {/* <div className="language_button">
-          <a href="/#">UA</a>
-          <a href="/#">EN</a>
-        </div> */}
+      <div className="burger">
+        <button className="burger_btn" onClick={burgerMenu}>
+          <span className="burger_span"></span>
+          <span className="burger_span"></span>
+          <span className="burger_span"></span>
+        </button>
       </div>
     </header>
   );
